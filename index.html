@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WORK.LAW — Трудовые отношения</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient a"></div><div class="ambient b"></div><div class="ambient c"></div><div class="grid-bg"></div>
+<main class="shell">
+<header class="topbar">
+<a class="logo" href="#"><span class="logo-icon">§</span><span><b>WORK.LAW</b><small>ТРУДОВЫЕ ОТНОШЕНИЯ</small></span></a>
+<div id="hud" class="hud" hidden>
+<div class="hud-item"><i class="ico shield"></i><span><small>Законность</small><b id="law">100</b></span></div>
+<div class="hud-item"><i class="ico wallet"></i><span><small>Баланс</small><b id="money">80 000 ₽</b></span></div>
+<div class="hud-item"><i class="ico flame"></i><span><small>Репутация</small><b id="rep">100</b></span></div>
+<div class="hud-item xp"><small>XP</small><b id="xp">0</b></div>
+</div></header>
+
+<section id="start" class="view active"><div class="hero">
+<div class="kicker"><span></span> ПРОВЕРКА · ТРУДОВОЕ ПРАВО</div>
+<h1>Насколько хорошо ты<br><em>ориентируешься на работе?</em></h1>
+<p>15 рабочих ситуаций, с которыми можно столкнуться в реальной компании. Проверь, насколько уверенно ты ориентируешься в своих правах, обязанностях и правилах трудовых отношений.</p>
+<div class="hero-cards"><div><i class="ico briefcase"></i><b>15</b><small>СИТУАЦИЙ</small></div><div><i class="ico scale"></i><b>5</b><small>СЛОЖНЫХ</small></div><div><i class="ico clock"></i><b>~15</b><small>МИНУТ</small></div></div>
+<button id="startBtn" class="cta">НАЧАТЬ ПРОВЕРКУ <span>→</span></button>
+<div class="disclaimer">Учебный интерактив по теме «Правовое регулирование трудовых отношений».</div>
+</div></section>
+
+<section id="game" class="view">
+<div class="progress-wrap"><div class="progress-top"><span id="stage"></span><span id="diff"></span><span id="timer">00:45</span></div><div class="progress"><i id="bar"></i></div></div>
+<article class="case"><div class="case-head"><div><div id="tag" class="tag"></div><h2 id="title"></h2></div><div id="num" class="badge"></div></div>
+<div id="story" class="story"></div><div class="choices" id="choices"></div><div id="feedback" class="feedback" hidden></div><button id="next" class="next" hidden>ПЕРЕЙТИ К СЛЕДУЮЩЕМУ КЕЙСУ <span>→</span></button></article>
+</section>
+
+<section id="court" class="view"><article class="court">
+<div class="kicker"><span></span> ИТОГОВАЯ СИТУАЦИЯ · №16</div><h2>Комната переговоров</h2>
+<p class="court-lead">Финальный кейс смешивает договор, режим работы, оплату и прекращение отношений. Здесь нет «подозрительной» формулировки, которая сразу выдаёт ответ.</p>
+<div id="courtChoices" class="court-grid"></div>
+<button id="verdictBtn" class="cta">СОБРАТЬ ПРАВОВУЮ ПОЗИЦИЮ <span>⚖</span></button><div id="verdict" class="verdict" hidden></div>
+</article></section>
+
+<section id="result" class="view"><article class="result">
+<div class="kicker"><span></span> РЕЗУЛЬТАТ ПРОВЕРКИ</div><div class="result-main"><div><h2 id="resultTitle"></h2><p id="resultText"></p></div><div class="score"><b id="finalXp">0</b><span>XP</span></div></div>
+<div class="final-grid"><div><i class="ico shield"></i><small>ЗАКОННОСТЬ</small><b id="finalLaw"></b></div><div><i class="ico wallet"></i><small>БАЛАНС</small><b id="finalMoney"></b></div><div><i class="ico flame"></i><small>РЕПУТАЦИЯ</small><b id="finalRep"></b></div><div><i class="ico check"></i><small>ТОЧНОСТЬ</small><b id="finalAcc"></b></div></div>
+<button id="restartBtn" class="cta">ПРОЙТИ ЕЩЁ РАЗ <span>↻</span></button><a class="source-link" target="_blank" href="https://www.consultant.ru/document/cons_doc_LAW_34683/">Проверить актуальную редакцию ТК РФ →</a>
+</article></section>
+<footer>DELEVOPER:VASILEV KUZMA</footer>
+</main><script src="script.js"></script></body></html>
